@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: #fafafa;;
+}
+
+nav {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+article, .feedHeader{
+    border: 1px solid #efefef;
+}
+
+article{
+    max-width: 614px;
+}
+
+.mainFeed, .mainRight, .navMenu {
+    background-color: white;
+}
+
+.navMenu, .topMenu, .logo, .rightMenu, 
+#mainContent, .header, .headerLeft,
+.underFeedImgThreeDot, .feedIcons, .feedBottom,
+.writeReple, .writeReple form, .mainRightProfile,
+.mainRightProfileName, .mainRightStroyTitle,
+.mainRightStroyRemainderImgWrap,
+.mainRightStroyRemainderName, .followWrap,
+.inputSearchWrap, .viewReple, .reple
+, .id_content, .content, .content__div{
+    display: flex;
+}
+.logo, .inputText, .headerLeft, .header, .topMenu, .feedIcons,
+.writeReple, .mainRightProfileName div, .mainRightStroyRemainderName,
+.follow, .mainRightStroyRemainderImgWrap, .inputSearchWrap{
+    align-items: center;
+}
+
+.content__div{
+    flex-direction: column;
+}
+article, .mainFeed,.feedHeader{
+    border-radius: 10px;
+}
+.navMenu {
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1;
+}
+
+.topMenu {
+    padding: 26px 20px;
+    margin: 0;
+    justify-content: space-between;
+    width: 1010px;
+    background-color: white;
+    height: 77px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+
+.logoImg, .rightMenu img{
+    width: 24px;
+    height: 24px;
+}
+
+.logoText {
+    width: 103px;
+    height: 29px;
+}
+
+.logoTextDiv {
+    margin-top: 7px;
+}
+
+.middleLine {
+    background-color: black;
+    height: 28px;
+    width: 1px;
+    margin: 0 16px;
+}
+
+.inputSeach{
+    width: 215px;
+    min-width: 125px;
+    height: 28px;
+    position: relative;
+}
+
+.inputSearchWrap div span{
+    font-size: 14px;
+}
+
+.inputSearchWrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+#inputText{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.inputSeach img{
+    width: 10px;
+    height: 10px;
+    margin: 0 6px 0 0;
+}
+.rightMenu {
+    height: 24px;
+}
+
+.rightMenuImg {
+    margin-left: 30px;
+}
+
+#mainContent {
+    justify-content: center;
+    width: 100%; 
+}
+
+.content{
+    position: relative;
+    max-width: 935px;
+    padding-top: 137px;
+    
+}
+.mainRight, .mainFeed{
+    float: left; 
+}
+
+.mainFeed{
+    margin-right: 28px;
+    margin-bottom: 40px;
+}
+
+.feedImg, .feedHeader{
+    width: 100%;
+}
+.feedHeader{
+    padding:16px;
+}
+
+.header{
+    justify-content: space-between;
+}
+
+.headerImg{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    
+}
+.headerTitle{
+    margin-left:16px ;
+}
+
+.headerThreedDot, .feedIconsImg, .likeImg{
+    width: 24px;
+    height: 24px;
+}
+
+.likeImg{
+    border-radius: 50%;
+}
+.underFeedImgThreeDot{
+    justify-content: center;
+    flex-direction: row;
+    margin: 15px 0 ;
+}
+
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: #dbdbdb;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+.feedIcons{
+    margin-top: -35px;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 40px;
+}
+
+.feedBottom, .viewReple{
+    padding:0 16px;
+    margin-bottom: 16px;
+}
+
+.feedBottom span{
+    display: flex;
+    align-items: center;
+}
+
+.viewReple{
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+
+.viewReple div{
+    margin-bottom: 2px;
+}
+.reple{
+    justify-content: space-between;
+}
+
+.id {
+    font-weight: 800;
+    margin-right: 10px;
+}
+.likeImg{
+    margin-right: 10px;
+}
+
+.writeReple{
+    border-top: 1px solid #efefef;
+    min-height: 56px;
+    padding: 0 16px;
+}
+
+.writeReple form{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.writeArea{
+    width: 90%;
+    height: 20px;
+    max-height: 80px;
+    border: 0;
+    resize: none;
+    font-size: 14px;
+}
+
+.repleSubmit{
+    font-size: 14px;
+    border: 0;
+    color: #3897f0;
+    opacity: 0.5;
+    background-color: white;
+}
+
+.mainRight{
+    width: 280px;
+    background: #fafafa;
+    
+}
+
+.mainRightProfile{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.mainRigntProfileImg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.mainRightProfileName{
+    margin-left: 14px;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+
+.mainRightProfileName .name1{
+    font-weight: 800;
+}
+
+.mainRightProfileName .name2, .story, .mainRightStroyRemainderTime{
+    color: #999;
+}
+
+.mainRightStroyTitle{
+    margin-top:12px;
+    padding:4px 16px;
+    justify-content: space-between;
+}
+
+.mainRightStroy, .recommend{
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.story{
+    font-size: 14px;
+}
+
+.storyAll{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.mainRightStroyRemainder{
+    margin: 8px 0 0 16px;
+    height: 223px;
+}
+
+.mainRightStroyRemainderImg{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.mainRightStroyRemainderName{
+    
+    margin-left: 14px;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.mainRightStroyRemainderId{
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+    width: 100%;
+}
+
+.mainRightStroyRemainderTime{
+    font-size: 10px;
+}
+
+.recommend{
+    margin: 12px 0;
+}
+
+.recommend .mainRightStroyRemainder{
+    margin: 0;
+}
+
+.recommend .mainRightStroyRemainderImgWrap{
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+.recommend .mainRightStroyRemainderName{
+    margin-left: -35px;
+}
+
+.follow{
+    font-size: 12px;
+    color: #3897f0;
+}
