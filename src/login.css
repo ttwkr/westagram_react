@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+
+.formWrap form, #allViewWrap,.loginArticle{
+    display: flex;
+}
+
+.formWrap form, #allViewWrap{
+    flex-direction: column;
+}
+
+.formWrap form{
+    align-items: center;
+    justify-content: center;
+}
+
+#allViewWrap{
+    max-width: 350px;
+    width: 100%;
+    align-items: center;
+    padding:10px 0;
+    margin: 0px 0px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.formWrap form{
+    width: 348px;
+    height: 263px;
+}
+
+.loginImg{
+    width: 175px;
+    height: 51px;
+    margin: 22px auto 12px;
+}
+
+.loginImg img{
+    width: 175px;
+    height: 51px;
+}
+
+.inputWindow input{
+    margin: 0 40px 6px;
+    width: 268px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    color: #999;
+    padding: 9px 0 7px 8px;
+}
+
+.inputWindow .submitIdPw{
+    color: white;
+    background-color: #C3E0FB;
+}
+
+.loginArticle{
+    margin: 0 auto;
+    max-width: 935px;
+    width: 100%;
+    justify-content: center;
+}
+
+.forgetPw{
+    font-size: 12px;
+    color:  #003569;
+}
