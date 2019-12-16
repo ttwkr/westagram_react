@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Article from './article'
 import MainRight from './mainRight'
+import '../../styles/main.scss'
 
 
 class Main extends Component{
@@ -49,36 +50,44 @@ class Main extends Component{
               comment_num : 3,
               user_id : 'nabi',
               comment : '배고프다'
-            }
+            },
           ]
-        }
+        },
       ],
-      write : ''
+      write : '',
     }
   
   inputWrite = (event) => {
     this.setState({
       write : event.target.value  
-
     })
   }
+
 
   render(){
     return (
       <main id="mainContent">
         <div className="content">
           <div className = 'content__div'>
-            {this.state.article.map( (curr) => {
+            {this.state.article.map( (curr, i) => {
               return  <Article
-                        addComment={ curr.addComments}
+                        addComments={() => {
+                          let arr = curr.comments.concat( {
+                            comment_num : curr.comments.length,
+                            user_id : 'ttwkr',
+                            comment : this.state.write
+                          })
+                          this.setState({
+                           comments : arr
+                        })}}
                         key = {curr.id}
-                        // id = {i}
+                        id = {i}
                         headerTitle = {curr.headerTitle}
                         headerImg = {curr.headerImg}
                         feedImg = {curr.feedImg}
                         comments = {curr.comments}
-                        write = {curr.inputWrite}
-                        />
+                        write = {this.inputWrite}
+                      />
             })}
           </div>
           <MainRight/>

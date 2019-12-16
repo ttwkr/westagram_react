@@ -14,8 +14,8 @@ function Article({id, addComments, headerTitle, headerImg, feedImg, comments, wr
             <FeedImg feedImg = {feedImg}/>
             <UnderFeed/>
             <FeedBottom user_id = 'ttwkr' number = '10'/>
-            <ViewReple comments = {comments} write = {write} addComments = {addComments}/>
-            {/* <WriteReple write = {write} addComments = {addComments}/> */}
+            <ViewReple comments = {comments} />
+            <WriteReple write = {write} addComments = {addComments}/>
           </article>
         </div>
     )

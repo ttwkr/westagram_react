@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from '../component/main/nav'
 import Main from '../component/main/main'
-import '../styles/App.css';
-import '../styles/main.css'
+import '../styles/App.scss';
+
 
 function App() {
   return (
