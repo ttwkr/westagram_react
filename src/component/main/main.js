@@ -56,7 +56,6 @@ class Main extends Component{
       ],
       write : '',
     }
-  
   inputWrite = (event) => {
     this.setState({
       write : event.target.value  
@@ -65,20 +64,23 @@ class Main extends Component{
 
 
   render(){
+
     return (
       <main id="mainContent">
         <div className="content">
           <div className = 'content__div'>
             {this.state.article.map( (curr, i) => {
               return  <Article
-                        addComments={() => {
+                        addComments={(event) => {
+                          event.preventDefault()
                           let arr = curr.comments.concat( {
                             comment_num : curr.comments.length,
                             user_id : 'ttwkr',
                             comment : this.state.write
                           })
+                          console.log(arr)
                           this.setState({
-                           comments : arr
+                           comment : arr
                         })}}
                         key = {curr.id}
                         id = {i}
