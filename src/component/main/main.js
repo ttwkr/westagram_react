@@ -64,32 +64,35 @@ class Main extends Component{
 
 
   render(){
-
     return (
       <main id="mainContent">
         <div className="content">
           <div className = 'content__div'>
-            {this.state.article.map( (curr, i) => {
-              return  <Article
+            {this.state.article.map( (curr,i) => {
+              return  (<Article
                         addComments={(event) => {
                           event.preventDefault()
-                          let arr = curr.comments.concat( {
-                            comment_num : curr.comments.length,
-                            user_id : 'ttwkr',
-                            comment : this.state.write
-                          })
-                          console.log(arr)
                           this.setState({
-                           comment : arr
+                           article : [{
+                            id : curr.length + 1,
+                            headerTitle : curr.headerTitle,
+                            headerImg : curr.headerImg,
+                            feedImg : curr.feedImg,
+                            comments : curr.comments.concat({
+                              comment_num : curr.comments.length + 1,
+                              user_id : 'asdf',
+                              comment : this.state.write
+                            })
+                          }],
+                          write : ""
                         })}}
                         key = {curr.id}
-                        id = {i}
                         headerTitle = {curr.headerTitle}
                         headerImg = {curr.headerImg}
                         feedImg = {curr.feedImg}
                         comments = {curr.comments}
                         write = {this.inputWrite}
-                      />
+                      />)
             })}
           </div>
           <MainRight/>
