@@ -6,19 +6,19 @@ import FeedHeader from './feedHeader'
 import ViewReple from './viewReple'
 import WriteReple from './writeReple'
 
-function Article({headerTitle, headerImg, feedImg}){
+function Article({id, addComments, headerTitle, headerImg, feedImg, comments, write}){
     return (
         <div className="mainFeed">
-          <article>
+          <article id = {id}>
             <FeedHeader headerTitle = {headerTitle} headerImg = {headerImg}/>
             <FeedImg feedImg = {feedImg}/>
             <UnderFeed/>
             <FeedBottom user_id = 'ttwkr' number = '10'/>
-            <ViewReple/>
-            <WriteReple/>
+            <ViewReple comments = {comments} write = {write} addComments = {addComments}/>
+            {/* <WriteReple write = {write} addComments = {addComments}/> */}
           </article>
         </div>
     )
-}
+  }
 
 export default Article

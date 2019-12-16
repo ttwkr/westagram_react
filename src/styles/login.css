@@ -62,6 +62,10 @@ body{
     background-color: #C3E0FB;
 }
 
+.inputWindow .checkLogin{
+    background-color: blue;
+}
+
 .loginArticle{
     margin: 0 auto;
     max-width: 935px;

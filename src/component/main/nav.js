@@ -1,5 +1,5 @@
 import React, {Component}from 'react';
-import logoText from './logo_text.png';
+import logoText from '../../images/logo_text.png';
 import RightMenu from './rightMenu';
 
 class Nav extends Component{
